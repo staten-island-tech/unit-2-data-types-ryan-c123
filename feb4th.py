@@ -35,8 +35,25 @@ print(values[6]) """
     print(input)
 sentence("type") """
 # Accept user input
-user_input = input("Please enter a sentence: ")
-words = user_input.split()
-print(len(words))
-
-
+"""x = "this is a thing"
+y= x.split( )
+z = y[0]
+print(y)
+print(z)"""
+#answer will be the variable that is the input, gets split into variable (word) and the len() says how many words there are with print
+""" answer = input("Please enter a sentence: ")
+words = answer.split()
+print(len(words)) """
+noun_1 = input("type a noun")
+noun_2 = input("type another noun")
+verb_1 = input("type a verb")
+verb_2 = input("type another verb")
+verb_3 = input("type another verb")
+adj_1 = input("type a adjective")
+adj_2 = input("type another adjective")
+adv = input("type an adverb")
+feeling = input("type an emotion")
+celebrity = input("name a celebrity")
+number = input("type a number")
+pronoun = input("type a pronoun")
+#I was so (feeling) when my favorite person, (celeb) showed up to my (adj_1) school. They were (adj_2) when they (verb_1)  next to me! I couldn't help but (adv) (verb) with a (noun). When they left, they (verb) my school (number) (noun)s.
