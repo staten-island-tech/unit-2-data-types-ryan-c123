@@ -55,7 +55,7 @@ adj_2 = input("type another adjective: ")
 adv = input("type an adverb: ")
 feeling = input("type an emotion: ")
 celeb = input("name a celebrity: ")
-number = input("type a number: ")
+number = int(input("type a number: "))
 pronoun = input("type a pronoun: ")
 print(f"I was so {feeling} when my favorite person, {celeb} showed up to my {adj_1} school. They were so {adj_2} when they {verb_1}  next to me! I couldn't help but {adv} {verb_2} with a {noun_1}. When they left, they {verb_3} my school {number} {noun_2}s.")
  """
@@ -104,10 +104,25 @@ def gamble(age, id):
         print("youre too young")
 age = 21
 id = true """
-def oe(number):
+""" def oe(number):
  if (number % 2) == 0:
     print("Even number")
  else:
     print ("Odd number")
 number = int(input("type a number to see if it is odd or even: "))
-oe(number)
+oe(number) """
+""" bill = float(input("What was your bill? "))
+print("How was your service? Was it bad, okay, good , or great?")
+service = input("Please choose one of the options. ")
+if service == "bad":
+    print("tip 0%? 0")
+elif service == "okay":
+    print(f"tip 15%? {bill * 0.15}")
+elif service == "good":
+    print(f"tip 20%? {bill * 0.20}")
+elif service == "great":
+    print(f"tip 25%? {bill * 0.25}")
+else:
+    print("please choose one of the 4 choices") """
+
+#find factors
