@@ -126,3 +126,32 @@ else:
     print("please choose one of the 4 choices") """
 
 #find factors
+""" x = int(input("Type a number to find its factors: "))
+
+factors = []
+def factor(x):
+    y = 1
+    while y<=x:
+
+       if (x%y) == 0:
+          factors.append(y)
+          y += 1 
+       else: 
+          y+=1
+    return factors
+print(f"The factors of {x} are {factor(x)}.") """
+print("Type 2 numbers to find their GCF.")
+one = int(input("Type a number: "))
+two = int(input("Type another number: "))
+factors = []
+def factor(x):
+    y = 1
+    while y<=x:
+
+       if (x%y) == 0:
+          factors.append(y, y+=1)
+    return factors
+factors_one = factor(one)
+factors_two = factor(two)
+print(f"The factors of {one} are {factor(one)}.")
+print(f"The factors of {two} are {factor(two)}.")
