@@ -143,15 +143,16 @@ print(f"The factors of {x} are {factor(x)}.") """
 print("Type 2 numbers to find their GCF.")
 one = int(input("Type a number: "))
 two = int(input("Type another number: "))
-factors = []
 def factor(x):
+    factors = []
     y = 1
     while y<=x:
 
        if (x%y) == 0:
-          factors.append(y, y+=1)
+          factors.append(y)
+       y+=1
     return factors
-factors_one = factor(one)
-factors_two = factor(two)
-print(f"The factors of {one} are {factor(one)}.")
-print(f"The factors of {two} are {factor(two)}.")
+    #so set() makes the lists of factors into a set so the ampersand & can be used to find the overlapping data that both of them share, list on the outside makes them a list again
+common_factors = list(set(factor(one)) & set(factor(two)))
+gcf = max(common_factors)
+print(f"The Greatest Common Factor of {one} and {two} is {gcf}")
