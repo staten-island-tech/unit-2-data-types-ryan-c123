@@ -156,3 +156,12 @@ def factor(x):
 common_factors = list(set(factor(one)) & set(factor(two)))
 gcf = max(common_factors)
 print(f"The Greatest Common Factor of {one} and {two} is {gcf}")
+
+""" def skin3(money, cost, isAvailable):
+    if isAvailable == True:
+        if money < cost: 
+           print("broke")
+        else:
+            print("go buy")
+    else:
+        print("no more") """
