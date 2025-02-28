@@ -147,12 +147,15 @@ def factor(x):
     factors = []
     y = 1
     while y<=x:
-
+# if y less than or equal to x then see if x divided by y is equal to 0
+# if so then add y to the factors list
+# even if it isnt a factor, just add 1 to y
        if (x%y) == 0:
           factors.append(y)
        y+=1
     return factors
-    #so set() makes the lists of factors into a set so the ampersand & can be used to find the overlapping data that both of them share, list on the outside makes them a list again
+    #so set() makes the lists of factors into a set so the ampersand & can combine the two variables
+    # the overlapping data that both of them share, list on the outside makes them a list again
 common_factors = list(set(factor(one)) & set(factor(two)))
 gcf = max(common_factors)
 print(f"The Greatest Common Factor of {one} and {two} is {gcf}")
