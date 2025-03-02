@@ -140,7 +140,7 @@ def factor(x):
           y+=1
     return factors
 print(f"The factors of {x} are {factor(x)}.") """
-print("Type 2 numbers to find their GCF.")
+"""print("Type 2 numbers to find their GCF.")
 one = int(input("Type a number: "))
 two = int(input("Type another number: "))
 def factor(x):
@@ -158,7 +158,7 @@ def factor(x):
     # the overlapping data that both of them share, list on the outside makes them a list again
 common_factors = list(set(factor(one)) & set(factor(two)))
 gcf = max(common_factors)
-print(f"The Greatest Common Factor of {one} and {two} is {gcf}")
+print(f"The Greatest Common Factor of {one} and {two} is {gcf}")"""
 
 """ def skin3(money, cost, isAvailable):
     if isAvailable == True:
@@ -168,3 +168,30 @@ print(f"The Greatest Common Factor of {one} and {two} is {gcf}")
             print("go buy")
     else:
         print("no more") """
+""" def find_gcf(factor1, factor2):
+    factor1 = []
+    factor2 = []
+    def common_factors(factor1, factor2):
+        for i in factor1:
+            if i in factor2:
+                return i
+        if n % i == 0 and n % i == 0:
+            factors.append(i)
+    return gcf
+print(find_gcf(factor1, factor2)) """
+num1 = int(input("whatthesigma1: "))
+num2 = int(input("whatthesigma2: "))
+def find_factors(n):
+    factors = []
+    for i in range(1, n+1):
+        if n % i == 0:
+            factors.append(i)
+    return factors
+def common_factors(x, y):
+    common = []
+    for num in x:
+        if num in y:  # Check if the number is in both lists
+            common.append(num)
+    return common
+cf = common_factors(num1, num2)
+print(max(cf))
